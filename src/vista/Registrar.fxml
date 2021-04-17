@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="background-root" stylesheets="@../valores/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.RegistrarControlador">
+   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="570.0" prefWidth="920.0">
+      <effect>
+         <DropShadow color="WHITE" offsetX="-10.0" offsetY="-10.0" />
+      </effect>
+      <HBox alignment="TOP_CENTER" prefHeight="570.0" prefWidth="920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <styleClass>
+            <String fx:value="background-root" />
+            <String fx:value="radius-45percent" />
+         </styleClass>
+         <effect>
+            <DropShadow color="#cbced1" offsetX="10.0" offsetY="10.0" />
+         </effect>
+         <VBox alignment="TOP_CENTER" maxHeight="570.0" maxWidth="460.0" prefHeight="570.0" prefWidth="460.0">
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="180.0" prefWidth="333.0">
+               <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="250.0" prefWidth="250.0" styleClass="radius-100percent">
+                  <effect>
+                     <DropShadow color="WHITE" offsetX="-4.0" offsetY="-4.0" />
+                  </effect>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="250.0" prefWidth="250.0" styleClass="radius-100percent">
+                     <effect>
+                        <DropShadow color="#cbced1" offsetX="4.0" offsetY="4.0" />
+                     </effect>
+                     <ImageView fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../recursos/imagen/acceso/logo.png" />
+                     </ImageView>
+                  </FlowPane>
+               </FlowPane>
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+            </FlowPane>
+            <Label alignment="CENTER" cache="true" contentDisplay="CENTER" prefHeight="65.0" prefWidth="288.0" styleClass="font-Bold40" text="COMPUTECNIO" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <textFill>
+                  <LinearGradient>
+                     <stops>
+                        <Stop color="#d6ba71" />
+                        <Stop color="#a28548" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <DropShadow color="#cbced1" offsetX="4.0" offsetY="4.0" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="26.0" prefWidth="354.0" styleClass="font-Regular16" text="Centro de soluciones técnicas para tu computadora" textAlignment="CENTER" textFill="#9c9c9c" wrapText="true">
+               <font>
+                  <Font name="Century Gothic" size="17.0" />
+               </font>
+            </Label>
+            <Label text="\@copyright: Dennys Carlos Chuyma Soel">
+               <font>
+                  <Font name="Segoe UI Light" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="110.0" />
+               </VBox.margin>
+            </Label>
+         </VBox>
+         <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="570.0" prefWidth="460.0">
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" layoutX="64.0" layoutY="167.0" maxHeight="45.0" maxWidth="460.0" prefHeight="45.0" prefWidth="460.0">
+               <styleClass>
+                  <String fx:value="background-root" />
+                  <String fx:value="radius-100percent" />
+               </styleClass>
+               <effect>
+                  <InnerShadow color="#cbced1" offsetX="4.0" offsetY="4.0" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="54.0" right="54.0" />
+               </VBox.margin>
+               <HBox alignment="CENTER" maxHeight="45.0" maxWidth="352.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="352.0">
+                  <styleClass>
+                     <String fx:value="background-root" />
+                     <String fx:value="radius-100percent" />
+                  </styleClass>
+                  <effect>
+                     <InnerShadow color="WHITE" offsetX="-4.0" offsetY="-4.0" />
+                  </effect>
+                  <ImageView fitHeight="27.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../recursos/imagen/registrarse/icons8_name_tag_26px.png" />
+                  </ImageView>
+                  <TextField fx:id="txtNombresApellidos" prefHeight="38.0" prefWidth="310.0" promptText="Nombres y Apellidos">
+                     <styleClass>
+                        <String fx:value="background-input" />
+                        <String fx:value="font-SemiBold16" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="1.0" />
+                     </padding>
+                  </TextField>
+               </HBox>
+            </FlowPane>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="45.0" maxWidth="460.0" prefHeight="45.0" prefWidth="460.0">
+               <VBox.margin>
+                  <Insets left="54.0" right="54.0" top="30.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="background-root" />
+                  <String fx:value="radius-100percent" />
+               </styleClass>
+               <effect>
+                  <InnerShadow color="#cbced1" offsetX="4.0" offsetY="4.0" />
+               </effect>
+               <HBox alignment="CENTER" maxHeight="45.0" maxWidth="352.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="352.0">
+                  <styleClass>
+                     <String fx:value="background-root" />
+                     <String fx:value="radius-100percent" />
+                  </styleClass>
+                  <effect>
+                     <InnerShadow color="WHITE" offsetX="-4.0" offsetY="-4.0" />
+                  </effect>
+                  <ImageView fitHeight="27.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../recursos/imagen/registrarse/icons8_gmail_26px.png" />
+                  </ImageView>
+                  <TextField fx:id="txtCorreo" prefHeight="38.0" prefWidth="310.0" promptText="Correo">
+                     <styleClass>
+                        <String fx:value="background-input" />
+                        <String fx:value="font-SemiBold16" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="1.0" />
+                     </padding>
+                  </TextField>
+               </HBox>
+            </FlowPane>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" layoutX="64.0" layoutY="167.0" maxHeight="45.0" maxWidth="460.0" prefHeight="45.0" prefWidth="460.0">
+               <styleClass>
+                  <String fx:value="background-root" />
+                  <String fx:value="radius-100percent" />
+               </styleClass>
+               <effect>
+                  <InnerShadow color="#cbced1" offsetX="4.0" offsetY="4.0" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="54.0" right="54.0" top="30.0" />
+               </VBox.margin>
+               <HBox alignment="CENTER" maxHeight="45.0" maxWidth="352.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="352.0">
+                  <styleClass>
+                     <String fx:value="background-root" />
+                     <String fx:value="radius-100percent" />
+                  </styleClass>
+                  <effect>
+                     <InnerShadow color="WHITE" offsetX="-4.0" offsetY="-4.0" />
+                  </effect>
+                  <ImageView fitHeight="27.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../recursos/imagen/acceso/icons8_person_26px.png" />
+                  </ImageView>
+                  <TextField fx:id="txtUsuario" prefHeight="38.0" prefWidth="310.0" promptText="Nombre de Usuario">
+                     <styleClass>
+                        <String fx:value="background-input" />
+                        <String fx:value="font-SemiBold16" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="1.0" />
+                     </padding>
+                  </TextField>
+               </HBox>
+            </FlowPane>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="45.0" maxWidth="460.0" prefHeight="45.0" prefWidth="460.0">
+               <styleClass>
+                  <String fx:value="background-root" />
+                  <String fx:value="radius-100percent" />
+               </styleClass>
+               <effect>
+                  <InnerShadow color="#cbced1" offsetX="4.0" offsetY="4.0" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="54.0" right="54.0" top="30.0" />
+               </VBox.margin>
+               <HBox alignment="CENTER" maxHeight="45.0" maxWidth="352.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="352.0">
+                  <styleClass>
+                     <String fx:value="background-root" />
+                     <String fx:value="radius-100percent" />
+                  </styleClass>
+                  <effect>
+                     <InnerShadow color="WHITE" offsetX="-4.0" offsetY="-4.0" />
+                  </effect>
+                  <ImageView fitHeight="27.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../recursos/imagen/acceso/icons8_password_26px.png" />
+                  </ImageView>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <TextField fx:id="txtContraseniavisible1" onKeyReleased="#sincronizarContrasenia" prefHeight="45.0" prefWidth="279.0" promptText="Contraseña" visible="false">
+                        <styleClass>
+                           <String fx:value="background-input" />
+                           <String fx:value="font-SemiBold16" />
+                        </styleClass>
+                        <padding>
+                           <Insets left="1.0" />
+                        </padding>
+                     </TextField>
+                     <PasswordField fx:id="txtContrasenia1" onKeyReleased="#sincronizarContrasenia" prefHeight="45.0" prefWidth="279.0" promptText="Contraseña">
+                        <styleClass>
+                           <String fx:value="background-input" />
+                           <String fx:value="font-SemiBold16" />
+                        </styleClass>
+                        <padding>
+                           <Insets left="1.0" />
+                        </padding>
+                     </PasswordField>
+                  </AnchorPane>
+                  <CheckBox fx:id="ckbVercontrasenia1" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#accionVercontrasenia" prefHeight="23.0" prefWidth="11.0" scaleZ="2.0" styleClass="checkbox-style" />
+               </HBox>
+            </FlowPane>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" layoutX="64.0" layoutY="287.0" maxHeight="45.0" maxWidth="460.0" prefHeight="45.0" prefWidth="460.0">
+               <styleClass>
+                  <String fx:value="background-root" />
+                  <String fx:value="radius-100percent" />
+               </styleClass>
+               <effect>
+                  <InnerShadow color="#cbced1" offsetX="4.0" offsetY="4.0" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="54.0" right="54.0" top="30.0" />
+               </VBox.margin>
+               <HBox alignment="CENTER" maxHeight="45.0" maxWidth="352.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="352.0">
+                  <styleClass>
+                     <String fx:value="background-root" />
+                     <String fx:value="radius-100percent" />
+                  </styleClass>
+                  <effect>
+                     <InnerShadow color="WHITE" offsetX="-4.0" offsetY="-4.0" />
+                  </effect>
+                  <ImageView fitHeight="27.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../recursos/imagen/acceso/icons8_password_26px.png" />
+                  </ImageView>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <TextField fx:id="txtContraseniavisible2" onKeyReleased="#sincronizarContrasenia" prefHeight="45.0" prefWidth="279.0" promptText="Vuelva a Ingresar la Contraseña" visible="false">
+                        <styleClass>
+                           <String fx:value="background-input" />
+                           <String fx:value="font-SemiBold16" />
+                        </styleClass>
+                        <padding>
+                           <Insets left="1.0" />
+                        </padding>
+                     </TextField>
+                     <PasswordField fx:id="txtContrasenia2" onKeyReleased="#sincronizarContrasenia" prefHeight="45.0" prefWidth="279.0" promptText="Vuelva a Ingresar la Contraseña">
+                        <styleClass>
+                           <String fx:value="background-input" />
+                           <String fx:value="font-SemiBold16" />
+                        </styleClass>
+                        <padding>
+                           <Insets left="1.0" />
+                        </padding>
+                     </PasswordField>
+                  </AnchorPane>
+                  <CheckBox fx:id="ckbVercontrasenia2" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#accionVercontrasenia" prefHeight="23.0" prefWidth="11.0" scaleZ="2.0" styleClass="checkbox-style" />
+               </HBox>
+            </FlowPane>
+            <BorderPane prefHeight="45.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="54.0" right="54.0" top="30.0" />
+               </VBox.margin>
+               <right>
+                  <FlowPane maxHeight="45.0" maxWidth="160.0" prefHeight="45.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+                     <effect>
+                        <DropShadow color="#cbced1" offsetX="4.0" offsetY="4.0" />
+                     </effect>
+                     <styleClass>
+                        <String fx:value="background-root" />
+                        <String fx:value="radius-100percent" />
+                     </styleClass>
+                     <ComboBox fx:id="cbxTipousuario" prefHeight="45.0" prefWidth="160.0" promptText="Usuario">
+                        <styleClass>
+                           <String fx:value="background-root" />
+                           <String fx:value="font-SemiBold16" />
+                           <String fx:value="radius-100percent" />
+                           <String fx:value="combo-box-popup" />
+                        </styleClass>
+                        <effect>
+                           <DropShadow color="WHITE" offsetX="-4.0" offsetY="-4.0" />
+                        </effect>
+                     </ComboBox>
+                     
+                  </FlowPane>
+               </right>
+               <left>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="45.0" maxWidth="170.0" prefHeight="45.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+                     <styleClass>
+                        <String fx:value="background-root" />
+                        <String fx:value="radius-100percent" />
+                     </styleClass>
+                     <effect>
+                        <InnerShadow color="#cbced1" offsetX="4.0" offsetY="4.0" />
+                     </effect>
+                     <HBox alignment="CENTER" maxHeight="45.0" maxWidth="170.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="160.0">
+                        <styleClass>
+                           <String fx:value="background-root" />
+                           <String fx:value="radius-100percent" />
+                        </styleClass>
+                        <effect>
+                           <InnerShadow color="WHITE" offsetX="-4.0" offsetY="-4.0" />
+                        </effect>
+                        <ImageView fitHeight="27.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <Image url="@../recursos/imagen/registrarse/icons8_identification_documents_26px.png" />
+                        </ImageView>
+                        <TextField fx:id="txtDni" prefHeight="38.0" prefWidth="117.0" promptText="DNI">
+                           <styleClass>
+                              <String fx:value="background-input" />
+                              <String fx:value="font-SemiBold16" />
+                           </styleClass>
+                           <padding>
+                              <Insets left="1.0" />
+                           </padding>
+                        </TextField>
+                     </HBox>
+                  </FlowPane>
+               </left>
+            </BorderPane>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="45.0" maxWidth="352.0" prefHeight="45.0" prefWidth="352.0">
+               <VBox.margin>
+                  <Insets left="54.0" right="54.0" top="30.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow color="#cbced1" offsetX="4.0" offsetY="4.0" />
+               </effect>
+               <styleClass>
+                  <String fx:value="background-root" />
+                  <String fx:value="radius-100percent" />
+               </styleClass>
+               <Button fx:id="btnRegistrar" maxHeight="45.0" maxWidth="352.0" mnemonicParsing="false" onAction="#accionRegistar" prefHeight="45.0" prefWidth="352.0" text="Registar" textFill="WHITE">
+                  <effect>
+                     <DropShadow color="WHITE" offsetX="-4.0" offsetY="-4.0" />
+                  </effect>
+                  <styleClass>
+                     <String fx:value="radius-100percent" />
+                     <String fx:value="button-style" />
+                     <String fx:value="font-SemiBold16" />
+                  </styleClass>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+            </FlowPane>
+         </VBox>
+      </HBox>
+      <styleClass>
+         <String fx:value="background-root" />
+         <String fx:value="radius-45percent" />
+      </styleClass>
+   </AnchorPane>
+</FlowPane>
